@@ -294,7 +294,7 @@ h1, h2, h3, h4, h5, h6 {
   background: $c-black;
   position: fixed;
   top:0;
-  right: 0; // change it later t0 -100%
+  right: 0%; // change it later to -100%
   bottom: 0;
   width: 70vw;
   z-index: 5;
@@ -306,5 +306,18 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     right: 0;
     background: none;
+  }
+  &.is-open {
+    right: 0
+  }
+}
+
+//nav trigger
+.nav-trigger {
+  cursor: pointer;
+  font-size: 2.4rem;
+  color: $c-black;
+  @include breakpoint(desktop) {
+    display: none;
   }
 }
