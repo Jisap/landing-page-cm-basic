@@ -232,4 +232,57 @@ h1, h2, h3, h4, h5, h6 {
   .brands__imag {
     max-height: none;
   }
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 4;
+  height: 90px;
+  background: palegoldenrod;
+  transition: all 0.3s ease-in-out;
+}
+.header__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+.header .btn {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .header .btn {
+    display: block;
+  }
+}
+.header.is-active {
+  background: #ffffff;
+  box-shadow: 0 1px 8px 4px rgba(83, 117, 217, 0.1);
+  transition: akk 0.3s ease-in-out;
+  height: 80px;
+}
+
+.nav {
+  background: #222222;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 70vw;
+  z-index: 5;
+  transition: all 0.5s ease-in-out;
+}
+@media (min-width: 768px) {
+  .nav {
+    width: 40vw;
+  }
+}
+@media (min-width: 1200px) {
+  .nav {
+    position: relative;
+    right: 0;
+    background: none;
+  }
 }/*# sourceMappingURL=style.css.map */
