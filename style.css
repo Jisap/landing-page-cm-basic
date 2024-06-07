@@ -268,7 +268,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #222222;
   position: fixed;
   top: 0;
-  right: 0%;
+  right: -100%;
   bottom: 0;
   width: 70vw;
   z-index: 5;
@@ -284,6 +284,24 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     right: 0;
     background: none;
+  }
+}
+.nav__close-btn {
+  width: 40px;
+  height: 40px;
+  color: #5375d9;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 16px;
+  left: 20px;
+}
+@media (min-width: 1200px) {
+  .nav__close-btn {
+    display: none;
   }
 }
 .nav.is-open {
