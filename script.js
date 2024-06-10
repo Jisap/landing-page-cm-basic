@@ -69,4 +69,51 @@ faqItems.forEach((item) => {
     const iconElement = item.querySelector("i")
     iconElement.classList = `${iconClass}`
   })
-})
+});
+
+//scroll reveal
+const sr = ScrollReveal({
+  origin: "bottom",
+  distance: "60px",
+  duration: 3000,
+  delay: 600,
+  reset: true // resets the animations
+});
+
+// custom configuration for specific elements
+const revealFromTop = {
+  origin: "top",
+}
+
+const revealWithInterval = {
+  distance: "100px",
+  interval: 100,
+};
+
+const revealFromLeft = {
+  distance: "100px",
+  origin: "left",
+}
+
+const revealFromRight = {
+  distance: "100px",
+  origin: "right",
+}
+
+const revealWithShortDistance = {
+  distance: "60px"
+}
+
+const revealWithDelay = {
+  distance: "100px",
+  delay: 400,
+}
+
+//banner
+sr.reveal(".banner__text", revealFromTop);
+sr.reveal(".banner__image");
+
+//brands
+sr.reveal(".brands__title", revealWithDelay);
+sr.reveal(".brands__img");
+
