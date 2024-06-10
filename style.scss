@@ -605,3 +605,57 @@ h1, h2, h3, h4, h5, h6 {
     }
   } 
 }
+
+// Contact
+
+.contact {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    @include breakpoint(desktop) {
+      flex-direction: row;
+    }
+  }
+  &__img,
+  &__form-wrapper {
+    flex: 1;
+  }
+  &__img {
+    display: flex;
+    justify-content: center;
+    @include breakpoint(desktop) {
+      order: 1;
+    }
+  }
+  &__form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    padding: 0 30px;
+    width: 100%;
+    @include breakpoint(desktop) {
+      text-align: left;
+      padding: 0;
+    }
+  }
+  &__form-subtitle {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+  @include breakpoint(tablet) {
+    &__btn {
+      max-width: 200px;
+    }
+  }
+}
+
+//footer
