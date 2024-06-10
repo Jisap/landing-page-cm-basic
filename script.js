@@ -121,5 +121,30 @@ sr.reveal(".brands__img", revealWithInterval);
 sr.reveal(".benefits__title", revealWithShortDistance);
 sr.reveal(".benefit__text", revealFromLeft);
 sr.reveal(".benefit__img", revealFromRight);
+sr.reveal(".benefit--2 .benefit__img", revealFromLeft);
+sr.reveal(".benefit--2 .benefit__text", revealFromRight);
 
+//testimonials
+sr.reveal(".testimonials, testimonials__container", {
+  distance: "100px",
+});
+
+//services
+sr.reveal(".services__title, .services__item", revealWithInterval);
+
+//FAQ
+sr.reveal(".faq__img", {
+  distance: "100px",
+  origin: "top",
+  interval: 100,
+});
+
+sr.reveal(".faq__title, .faq__item", revealWithInterval);
+
+//Contact
+sr.reveal(".contact__form-wrapper");
+sr.reveal(".contact__img", revealFromTop);
+
+//footer
+sr.reveal(".footer")
 
