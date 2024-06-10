@@ -712,4 +712,11 @@ h1, h2, h3, h4, h5, h6 {
   @include breakpoint(desktop) {
     margin: 0;
   }
+  &__icon {
+    font-size: 26px;
+    transition: all .3s ease-in-out;
+    &:hover {
+      color: $c-primary;
+    }
+  }
 }

@@ -702,4 +702,11 @@ h1, h2, h3, h4, h5, h6 {
   .social {
     margin: 0;
   }
+}
+.social__icon {
+  font-size: 26px;
+  transition: all 0.3s ease-in-out;
+}
+.social__icon:hover {
+  color: #5375d9;
 }/*# sourceMappingURL=style.css.map */
