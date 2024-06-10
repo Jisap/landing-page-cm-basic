@@ -58,3 +58,15 @@ const swiper = new Swiper(".swiper", {
   }
 
 })
+
+// Answers
+const faqItems = document.querySelectorAll(".faq__item");
+
+faqItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    const isOpen = item.classList.toggle("is-open");
+    const iconClass = isOpen ? "ri-arrow-up-s-line" : "ri-arrow-down-s-line"
+    const iconElement = item.querySelector("i")
+    iconElement.classList = `${iconClass}`
+  })
+})
