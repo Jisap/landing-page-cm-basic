@@ -115,5 +115,11 @@ sr.reveal(".banner__image");
 
 //brands
 sr.reveal(".brands__title", revealWithDelay);
-sr.reveal(".brands__img");
+sr.reveal(".brands__img", revealWithInterval);
+
+//benefits
+sr.reveal(".benefits__title", revealWithShortDistance);
+sr.reveal(".benefit__text", revealFromLeft);
+sr.reveal(".benefit__img", revealFromRight);
+
 
